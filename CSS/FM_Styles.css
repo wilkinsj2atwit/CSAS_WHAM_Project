@@ -7,79 +7,83 @@ body, h1, h2, p, ul, li, a, button {
 
 /* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa; /* Light gray background */
-    margin: 0;
-    padding: 0;
+    background-color: #d4d4d4; /* Subtle light gray */
+    color: #14396c; /* Adjust text color to ensure contrast */
+    font-family: 'Arial', sans-serif; /* Keep font easy to read */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
 }
 
+
 /* Banner Styling */
-header {
-    position: relative;
-    text-align: center;
-    color: white;
-    background: url('your-banner-image.jpg') no-repeat center center/cover; /* Replace with your chosen image */
-    height: 300px; /* Adjust as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header h1 {
+    text-align: center; /* Center-align title */
+    margin: 10px 0; /* Reduced margin to bring it closer to the navbar */
+    font-size: 2rem; /* Ensure readable size */
+    padding: 20px 0; /* Space around title */
+    background-color: #d4d4d4; /* Matches the background */
+}
+
+/* New wrapper to move "Famous Figures" title */
+.title-wrapper {
+    display: flex; /* Allow flexible layout */
+    justify-content: flex-start; /* Align the title to the left */
+    margin-left: 10%; /* Push it to the right, adjust this percentage for positioning */
+    width: 90%; /* Control the width of the title wrapper */
 }
 
 header h1 {
-    font-size: 3rem;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text */
-    padding: 10px 20px;
-    border-radius: 8px;
+    text-align: left; /* Align title to the left */
+    margin: 0; /* Remove extra margin */
+    padding-left: 20px; /* Add padding to the left for better spacing */
+    font-size: 2rem; /* Consistent title size */
 }
+
 
 /* Navigation Bar Styling */
 nav {
     display: flex;
-    justify-content: center;
-    background-color: #343a40; /* Dark gray background */
-    color: white;
-    border-top: 5px solid #007bff;
-    border-bottom: 5px solid #007bff;
+    justify-content: space-around; /* Keep buttons spaced evenly */
+    align-items: center; /* Center items vertically */
+    height: 50px; /* Keep consistent height */
+    background-color: #215286; /* Primary color for the navbar */
+    color: #ffffff; /* Text color */
+    border-top: 2px solid #8f733c; /* Equal sign effect */
+    border-bottom: 2px solid #8f733c; /* Equal sign effect */
+    width: 100%; /* Full width of the viewport */
+    position: relative; /* Maintain layout flow */
+    box-sizing: border-box; /* Include padding/border in width */
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    justify-content: center;
-    width: 100%;
+    gap: 20px; /* Space between buttons */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    list-style: none; /* Remove bullets */
+    flex-grow: 1; /* Allow buttons to take up space */
+    justify-content: center; /* Center the buttons */
 }
 
-nav ul:before,
-nav ul:after {
-    content: '===';
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.5rem;
+nav ul li {
+    margin: 0;
+    padding: 0;
 }
 
-nav li {
-    margin: 0 10px;
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* White text */
+    font-weight: bold; /* Make text bold */
+    font-size: 1rem; /* Adjust text size */
+    padding: 10px 15px; /* Create padding around buttons */
+    border-radius: 5px; /* Add slight rounding to button */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
-    padding: 10px 20px;
-    border: 1px solid transparent;
-    transition: all 0.3s ease;
+nav ul li a:hover {
+    background-color: #8f733c; /* Change color on hover */
 }
 
-nav a:hover {
-    background-color: #007bff; /* Blue hover effect */
-    border: 1px solid #007bff;
-    border-radius: 5px;
-}
 
 /* Main Content Styling */
 main {
@@ -89,13 +93,13 @@ main {
 
 main section {
     margin-bottom: 20px;
-    border-bottom: 2px solid #007bff; /* Divider for sections */
+    border-bottom: 2px solid #8f733c; /* Divider for sections in light brown */
     padding-bottom: 20px;
 }
 
 main h2 {
     margin-bottom: 15px;
-    color: #007bff; /* Blue headers */
+    color: #215286; /* Mid-tone blue for headers */
 }
 
 main p {
@@ -114,30 +118,32 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #343a40; /* Dark gray background */
-    color: white;
+    background-color: #775b2b; /* Dark brown */
+    color: #ffffff; /* White text */
     padding: 20px;
     margin-top: 20px;
-    border-top: 5px solid #007bff;
+    border-top: 5px solid #8f733c; /* Light brown */
 }
 
 footer p {
-    margin: 0;
-    font-size: 0.9rem;
+    margin: 5px 0; /* Reduce vertical spacing */
+    font-size: 0.9rem; /* Ensure smaller font size */
+    line-height: 1.4; /* Slightly tighter line spacing */
+    text-align: center; /* Center-align the text */
 }
 
+
 footer a {
-    color: #007bff;
+    color: #215286; /* Mid-tone blue */
     text-decoration: none;
     padding: 10px 20px;
-    background-color: white;
-    color: #343a40;
-    border: 1px solid #007bff;
+    background-color: #ffffff; /* White background for button */
+    border: 1px solid #215286;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 footer a:hover {
-    background-color: #007bff;
-    color: white;
+    background-color: #215286; /* Mid-tone blue on hover */
+    color: #ffffff; /* White text on hover */
 }
