@@ -105,6 +105,10 @@ main h2 {
 main p {
     margin-bottom: 20px;
     font-size: 1.1rem;
+	max-width: 1000px; /* Limit text width to a maximum of 800px */
+    margin: 0 auto; /* Center text block on the page */
+    line-height: 1.6; /* Improve readability with better line spacing */
+    padding: 10px; /* Add inner spacing around the text */
 }
 
 /* ThingLink Container */

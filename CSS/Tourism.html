@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tourism and Buildings of Ancient Greece</title>
+		<link rel="stylesheet" href="../STYLES/Styles.css">
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyButYeGmkYVbSQC2rFPxxUYmYNc5QhvVrU&callback=initMap" async defer></script>
+	</head>
+	
+	<body onload="initMap()">
+		<header>
+			<div class="title-wrapper">
+				<h1>Ancient Greece: Tourism and Buildings</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="Homepage.html">Home</a></li>
+					<li><a href="History.html">History</a></li>
+					<li><a href="Culture.html">Culture</a></li>
+					<li><a href="Famous.html">Famous Figures</a></li>
+					<li><a href="Artifacts.html">Artifacts</a></li>
+					<li><a href="Tourism.html">Tourism</a></li>
+					<li><a href="Work_cited.html">Works Cited</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<section id="buildings">
+				<h2>Ancient Greek Buildings</h2>
+				<article id="temple-of-artemis">
+					<h3>Temple of Artemis (Roman Reconstruction)</h3>
+					<p>The Temple of Artemis was one of the Seven Wonders of the Ancient World. Its Roman reconstruction is a monumental building, showcasing the grandeur of the original temple. Situated in the ancient city of Ephesus, it was dedicated to Artemis, the goddess of the hunt.</p>
+					<img src="../ASSETS/Temple_of_Athens.jpg" alt="Temple of Artemis" width="600">
+				</article>
+				
+				<article id="roman-agora">
+					<h3>Roman Agora</h3>
+					<p>The Roman Agora in Athens was a marketplace and civic space, constructed during the Roman period. This open space contained a number of buildings, including the famous Tower of the Winds, a clock tower with intricate astronomical functions.</p>
+					<img src="../ASSETS/Roman_Agora.jpg" alt="Roman Agora" width="600">
+				</article>
+				
+				<article id="tower-of-the-winds">
+					<h3>Tower of the Winds</h3>
+					<p>The Tower of the Winds is a marble clocktower in the Roman Agora in Athens. It is notable for its intricate frieze, which represents the eight winds, and its function as a water clock. The tower still stands as a symbol of ancient Greek ingenuity in timekeeping.</p>
+					<img src="../ASSETS/tower-of-the-winds.jpg" alt="Tower of the Winds" width="600">
+				</article>
+				
+			</section>
+
+			<section id="tourism-map-section">
+				<h2>Tourism Spots in Greece</h2>
+				<label for="places-dropdown">Select a place to view:</label>
+				<select id="places-dropdown" onchange="updateMap(this.value)">
+					<option value="Ancient Theatre at the Asclepieion of Epidaurus">Ancient Theatre at the Asclepieion of Epidaurus</option>
+					<option value="Ancient Corinth">Ancient Corinth</option>
+					<option value="Delphi Archaeological Museum">Delphi Archaeological Museum</option>
+					<option value="Knossos Palace">Knossos Palace</option>
+					<option value="Acropolis of Athens">Acropolis of Athens</option>
+					<option value="Agora of Athens">Roman Agora of Athens</option>
+					<option value="Odeon of Agrippa">Odeon of Agrippa</option>
+				</select>
+				<div id="tourism-map" style="height: 500px; width: 100%;"></div>
+				<!-- Description Section -->
+				<div id="description"></div>
+			</section>
+		</main>
+		
+		<footer>
+			<div>
+				<p>Created by Wentworth Students:</p>
+				<p>Reay A., Nikkolai F., Elijah H., and Justin W.</p>
+			</div>
+			<a href="Work_cited.html">Works Cited</a>
+		</footer>
+		
+		<script src="../SCRIPTS/Mapwork.js"></script>
+	</body>
+</html>
