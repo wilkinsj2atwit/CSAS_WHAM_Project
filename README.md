@@ -2,7 +2,7 @@
 WHAM Project 
 Website: https://greecefall2024.witcsas.reclaim.hosting/
 
-CSS file - Holds the styles for the pages
+CSS file - Holds the styles for the pages \n
 HTML file - Holds the actual HTML coded pages
 Images - Any media needed for the pages
 Scripts - Scripts for certain pages
